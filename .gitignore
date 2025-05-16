@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+build
+pnpm-lock.yaml
+.env
+*.tgz

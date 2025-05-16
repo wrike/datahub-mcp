@@ -59,7 +59,7 @@ npm pack && npm install -g ./wrike-datahub-mcp-1.0.0.tgz
 ```
 Then run it within your MCP client
 ```bash
-datahub-mcp
+@wrike/datahub-mcp
 ```
 
 ### Running the Inspector
