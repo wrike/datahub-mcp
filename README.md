@@ -38,6 +38,23 @@ Record Operations:
 - pnpm
 - Wrike account with API access
 
+### Usage
+Add the following to your .cursor/mcp.json or claude_desktop_config.json
+
+```json
+{
+  "mcpServers": {
+    "wrikeDatahub": {
+      "command": "npx",
+      "args": ["-y", "datahub-mcp"],
+      "env": {
+        "WRIKE_TOKEN": "your-wrike-api-token"
+      }
+    }
+  }
+}
+```
+
 ### Configuration
 
 Set up your environment variables:
@@ -59,7 +76,7 @@ npm pack && npm install -g ./wrike-datahub-mcp-1.0.0.tgz
 ```
 Then run it within your MCP client
 ```bash
-@wrike/datahub-mcp
+datahub-mcp
 ```
 
 ### Running the Inspector

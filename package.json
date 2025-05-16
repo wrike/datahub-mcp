@@ -1,10 +1,13 @@
 {
-  "name": "@wrike/datahub-mcp",
+  "name": "datahub-mcp",
   "version": "1.0.0",
   "description": "",
+  "repository": "https://github.com/wrike/datahub-mcp",
   "type": "module",
   "main": "build/index.js",
-  "bin": "build/index.js",
+  "bin": {
+    "datahub-mcp": "build/index.js"
+  },
   "scripts": {
     "build": "tsc && chmod 755 build/index.js",
     "inspector": "pnpm build && npx @modelcontextprotocol/inspector build/index.js"
@@ -24,5 +27,8 @@
     "@types/node": "^22.13.11",
     "openapi-typescript": "^7.6.1",
     "typescript": "^5.8.2"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
